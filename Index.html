@@ -12,9 +12,12 @@
 
 
 <script>
-let age = parseInt(prompt("Inserisci la tua età"));
+let age = parseInt(prompt("Inserisci la tua età:"));
+
+
+
 if(age >=18){
-window.location.href = "accesso_consentito.html";
+window.location.href = "terminiecondizioni.html";
 }
 else if (age == 0){alert("Età non valida, riprova.")
 let message_due = document.getElementById("access_due");
@@ -36,6 +39,7 @@ else if (age == 4){alert("Età non valida, riprova.")
 let message_due = document.getElementById("access_due");
 access_due.innerHTML = "Ricarica la pagina per riprovare.";
 }
+
 else{
     window.location.href = "accesso_negato.html";
 
